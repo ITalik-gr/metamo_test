@@ -1,12 +1,60 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @import 'libs/bootstrap-reboot.min';
 
+
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    box-sizing: border-box;
+    line-height: 100%;
+}
+
+ul, ol {
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 70px;
+    max-width: 1920px;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    max-width: 284px;
+    min-width: 100%;
+    border-radius: 36px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fbfbfb;
+    transition: .4s all;
+    &:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.section {
+    &-title {
+        font-weight: 700;
+        font-size: 54px;
+        color: #101020;
+    }
+}
 
 @import 'blocks/header';
+@import 'blocks/partners';

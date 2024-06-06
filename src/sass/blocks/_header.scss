@@ -1,7 +1,93 @@
 .nav {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-logo {
+    font-weight: 500;
+    font-size: 36px;
+    color: #f2f2f2;
+    max-height: 55px;
+    img {
+      margin-right: 4px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: .4s all;
+        &:hover {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
 }
 
 .header {
-  
+  background-image: url(../img/header-bg.svg);
+  background-size: cover;
+  background-position: 0 0;
+  background-color: #17191D;
+  padding-top: 30px;
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 163px;
+    padding-bottom: 247px;
+  }
+  &-content {
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.15);
+    background: linear-gradient(141deg, rgba(122, 122, 122, 0.19) 0%, rgba(122, 122, 122, 0.19) 100%);
+    border-radius: 7px;
+    padding: 72px 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1268px;
+  }
+
+  &-title {
+    max-width: 1176px;
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 118%;
+  }
+  &-descr {
+    max-width: 742px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 114px;
+  }
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-btn {
+    &-1 {
+      margin-right: 60px;
+      background-color: #FF0B53;
+    }
+    &-2 {
+      border: 1px solid #fff;
+    }
+  }
 }
