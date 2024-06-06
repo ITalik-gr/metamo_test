@@ -1,0 +1,139 @@
+.team {
+  padding: 120px 0;
+  overflow: hidden;
+  &-title {
+    margin-bottom: 71px;
+  }
+  &-wrapper {
+    display: flex;
+  }
+
+  &-text {
+    margin-top: 139px;
+    min-width: 430px;
+    margin-right: 20px;
+    &__title {
+      font-weight: 500;
+      font-size: 34px;
+      color: #101020;
+      margin-bottom: 18px;
+    }
+    &__descr {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 147%;
+      color: #3d3d3d;
+      max-width: 430px;
+    }
+  }
+
+  &-tabs {
+    background: #f0f0f0;
+    border-radius: 61px;
+    width: 633px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  &-tab {
+    border-radius: 61px;
+    width: 211px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #101020;
+    cursor: pointer;
+    &__circle {
+      border: 3px solid #09121f;
+      border-radius: 100%;
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        width: 13px;
+        height: 13px;
+        background: #FFF;
+        border-radius: 100%;
+        opacity: 0;
+      }
+    }
+    &--active {
+      background: #ff0b53;
+      color: #FFF;
+      .team-tab__circle {
+        border: 3px solid #FFF;
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-slider {
+    display: flex;
+  }
+  &-card {
+    border: 1px solid #9a9a9a;
+    border-radius: 5px;
+    width: 430px!important;
+    height: 345px;
+    position: relative;
+    margin-right: 20px;
+    &__image {
+      img {
+        width: 430px;
+        height: 345px;
+      }
+    }
+    &__body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      padding-top: 122px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      scale: .9;
+      transition: .3s all;
+    }
+    &__name {
+      font-weight: 500;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    &__position {
+      font-weight: 400;
+      font-size: 24px;
+      color: #f2f2f2;
+      margin-bottom: 30px;
+    }
+    &__btn {
+      background: #ff0b53;
+      font-weight: 400;
+      font-size: 24px;
+      color: #fff;
+      max-width: 267px;
+      height: 64px;
+      width: 100%;
+    }
+    &:hover {
+      .team-card__body {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+  }
+}
