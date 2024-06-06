@@ -1,27 +1,86 @@
 .footer {
+  overflow: hidden;
   padding: 120px 0 130px 0;
   background: #17191d;
   position: relative;
+  @include max1600 {
+    padding: 100px 0 110px 0;
+  }
+  @include max1400 {
+    padding: 90px 0 100px 0;
+  }
+  @include max992 {
+    padding: 67px 0;
+  }
+  @include max576 {
+    padding: 50px 0;
+  }
   &-title {
     font-weight: 700;
     font-size: 54px;
     color: #fff;
     margin-bottom: 90px;
+    @include max1400 {
+      margin-bottom: 70px;
+      font-size: 48px;
+    }
+    @include max1200 {
+      font-size: 44px;
+      margin-bottom: 50px;
+    }
+    @include max992 {
+      font-size: 38px;
+    }
+    @include max768 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    @include max576 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
   }
   &-dots {
     position: absolute;
     top: 73px;
     right: 70px;
+    @include max1400 {
+      top: 24px;
+      right: -20px;
+    }
+    @include max1200 {
+      display: none;
+    }
   }
   &-wrap {
     display: flex;
-
+    @include max992 {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   &-block {
     margin-right: 267px;
+    @include max1700 {
+      margin-right: 180px;
+    }
+    @include max1600 {
+      margin-right: 110px;
+    }
+    @include max1400 {
+      margin-right: 70px;
+    }
+    @include max1400 {
+      margin-right: 50px;
+    }
+    @include max992 {
+      margin-right: 8px;
+      margin-bottom: 30px;
+    }
     &:last-child {
       margin-right: 0;
+      margin-bottom: 0;
     }
     &__title {
       font-weight: 700;
@@ -40,6 +99,21 @@
         height: 2px;
         background: #ff0b53;
       }
+      @include max1400 {
+        font-size: 28px;
+      }
+      @include max1200 {
+      }
+      @include max992 {
+        font-size: 24px;
+      }
+      @include max768 {
+        font-size: 20px;
+        &::after {
+          width: 90px;
+        }
+      }
+
     }
   }
 
@@ -52,11 +126,20 @@
       a {
         display: flex;
         align-items: center;
-        font-weight: 400;
+        font-weight: 200;
         font-size: 20px;
         color: #fff;
         img {
           margin-right: 15px;
+        }
+        @include max992 {
+          font-size: 18px;
+        }
+        @include max768 {
+          font-size: 16px;
+          img {
+            margin-right: 10px;
+          }
         }
       }
     }
@@ -68,9 +151,15 @@
     align-items: center;
     &__item {
       margin-right: 15px;
+      @include max768  {
+        margin-right: 12px;
+      }
       &:last-child {
         margin-right: 0;
       }
+    }
+    @include max768  {
+      margin-bottom: 20px;
     }
   }
 
@@ -78,6 +167,9 @@
     font-weight: 400;
     font-size: 18px;
     color: #b1b1b1;
+    @include max768  {
+      font-size: 16px;
+    }
   }
 
 }

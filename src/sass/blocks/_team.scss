@@ -1,22 +1,50 @@
 .team {
   padding: 120px 0;
   overflow: hidden;
+  @include max1400 {
+    padding: 90px 0;
+  }
+  @include max768 {
+    padding: 50px 0;
+  }
   &-title {
     margin-bottom: 71px;
+    @include max1400 {
+      margin-bottom: 60px;
+    }
+    @include max768 {
+      margin-bottom: 30px;
+    }
   }
   &-wrapper {
     display: flex;
+    @include max1200 {
+      flex-direction: column;
+    }
   }
 
   &-text {
     margin-top: 139px;
     min-width: 430px;
     margin-right: 20px;
+    @include max1200 {
+      margin: 0 0 40px 0;
+    }
     &__title {
       font-weight: 500;
       font-size: 34px;
       color: #101020;
       margin-bottom: 18px;
+      @include max992 {
+        font-size: 28px;
+      }
+      @include max768 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      @include max576 {
+        font-size: 20px;
+      }
     }
     &__descr {
       font-weight: 300;
@@ -24,6 +52,15 @@
       line-height: 147%;
       color: #3d3d3d;
       max-width: 430px;
+      @include max1200 {
+        max-width: 840px;
+      }
+      @include max768 {
+        font-size: 20px;
+      }
+      @include max576 {
+        font-size: 16px;
+      }
     }
   }
 
@@ -35,7 +72,22 @@
     display: flex;
     align-items: center;
     margin-bottom: 70px;
+    @include max992 {
+      width: 533px;
+      height: 54px;
+      margin-bottom: 50px;
+    }
+    @include max768 {
+      width: 433px;
+      height: 45px;
+    }
+    @include max576 {
+      width: 320px;
+      height: 38px;
+      margin-bottom: 40px;
+    }
   }
+
   &-tab {
     border-radius: 61px;
     width: 211px;
@@ -47,6 +99,20 @@
     font-size: 24px;
     color: #101020;
     cursor: pointer;
+    @include max992 {
+      width: 190px;
+      height: 54px;
+    }
+    @include max768 {
+      width: 170px;
+      font-size: 20px;
+      height: 45px;
+    }
+    @include max576 {
+      width: 111px;
+      height: 38px;
+      font-size: 18px;
+    }
     &__circle {
       border: 3px solid #09121f;
       border-radius: 100%;
@@ -62,6 +128,23 @@
         background: #FFF;
         border-radius: 100%;
         opacity: 0;
+        @include max768 {
+          width: 9px;
+          height: 9px;
+        }
+      }
+      @include max992 {
+        margin-right: 12px;
+        border: 2px solid #09121f;
+      }
+      @include max768 {
+        margin-right: 7px;
+        width: 21px;
+        height: 21px;
+      }
+      @include max576 {
+        width: 18px;
+        height: 18px;
       }
     }
     &--active {
@@ -71,6 +154,9 @@
         border: 3px solid #FFF;
         span {
           opacity: 1;
+        }
+        @include max992 {
+          border: 2px solid #FFF;
         }
       }
     }
@@ -82,14 +168,33 @@
   &-card {
     border: 1px solid #9a9a9a;
     border-radius: 5px;
-    width: 430px!important;
+    width: 430px;
     height: 345px;
     position: relative;
     margin-right: 20px;
+    @include max1400 {
+      width: 400px;
+      height: 320px;
+    }
+    @include max1200 {
+      width: 470px;
+      height: 378px;
+    }
+    @include max992 {
+
+    }
+    @include max768 {
+      width: 385px;
+      height: 308px;
+    }
+    @include max576 {
+      width: 335px;
+      height: 268px;
+    }
     &__image {
       img {
-        width: 430px;
-        height: 345px;
+        width: 100%;
+        height: 100%;
       }
     }
     &__body {
@@ -107,18 +212,38 @@
       opacity: 0;
       scale: .9;
       transition: .3s all;
+      @include max992 {
+        padding-top: 110px;
+      }
+      @include max768 {
+        padding-top: 100px;
+      }
     }
     &__name {
       font-weight: 500;
       font-size: 30px;
       color: #fff;
       margin-bottom: 10px;
+      @include max992 {
+        font-size: 28px;
+      }
+      @include max768 {
+        font-size: 24px;
+        margin-bottom: 7px;
+      }
     }
     &__position {
       font-weight: 400;
       font-size: 24px;
       color: #f2f2f2;
       margin-bottom: 30px;
+      @include max992 {
+        font-size: 22px;
+      }
+      @include max768 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
     }
     &__btn {
       background: #ff0b53;
@@ -128,6 +253,11 @@
       max-width: 267px;
       height: 64px;
       width: 100%;
+      @include max768 {
+        font-size: 20px;
+        width: 233px;
+        height: 56px;
+      }
     }
     &:hover {
       .team-card__body {

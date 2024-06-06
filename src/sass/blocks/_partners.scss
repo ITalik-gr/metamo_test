@@ -1,13 +1,26 @@
 .partners {
   padding: 120px 0;
   background: #f8f8f8;
+  @include max992 {
+    padding: 80px 0;
+  }
   &-title {
     margin-bottom: 90px;
+    @include max992 {
+      margin-bottom: 40px;
+    }
+    @include max768 {
+      margin-bottom: 30px;
+    }
   }
 
   &-wrapper {
     display: flex;
     justify-content: space-between;
+    @include max1200 {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-feedback {
@@ -22,15 +35,35 @@
     min-height: 100%;
     max-height: 362px;
     margin-right: 20px;
+
+    @include max1400 {
+      max-height: none;
+      max-width: 1024px;
+    }
+    @include max1200 {
+      margin-bottom: 40px;
+      max-width: 880px;
+      margin-right: 0;
+    }
+    @include max768 {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
     &-user {
       margin-bottom: 30px;
       display: flex;
       align-items: center;
+      @include max768 {
+        margin-bottom: 20px;
+      }
       &__image {
         margin-right: 15px;
         img {
           max-width: 70px;
           height: auto;
+          @include max768 {
+            max-width: 60px;
+          }
         }
       }
       &__text {
@@ -41,11 +74,17 @@
         font-size: 24px;
         color: #000;
         margin-bottom: 10px;
+        @include max768 {
+          font-size: 22px;
+        }
       }
       &__position {
         font-weight: 300;
         font-size: 20px;
         color: #575757;
+        @include max768 {
+          font-size: 18px;
+        }
       }
     }
     &__body {
@@ -53,6 +92,9 @@
       font-size: 20px;
       line-height: 147%;
       color: #3d3d3d;
+      @include max768 {
+        font-size: 18px;
+      }
     }
   }
 
@@ -60,6 +102,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    min-width: 880px;
+    @include max1600 {
+      min-width: 775px;
+    }
+    @include max1400 {
+      min-width: 590px;
+      justify-content: flex-end;
+    }
+    @include max1200 {
+      justify-content: center;
+    }
+    @include max768 {
+      min-width: 100%;
+    }
+    @include max576 {
+      gap: 16px;
+    }
   }
   &-card {
     background: #fff;
@@ -70,6 +129,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include max1600 {
+      width: 245px;
+    }
+    @include max1400 {
+      width: 280px;
+    }
+    @include max768 {
+      max-width: 280px;
+      width: 47.1%;
+      padding: 14px;
+      height: auto;
+      min-height: 120px;
+      img {
+        width: 100%;
+      }
+    }
     img {
 
     }
