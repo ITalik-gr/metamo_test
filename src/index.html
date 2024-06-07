@@ -26,7 +26,11 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.min.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  
 
 </head>
 <body>
@@ -183,7 +187,7 @@
     </section>
 
     <section class="team">
-        <div class="popup-wrap popup-wrap--active">
+        <div class="popup-wrap">
             <div class="popup">
                 <div class="popup-close">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,43 +261,154 @@
             <div class="section-title team-title">
                 Our Team
             </div>
-            <div class="team-wrapper">
 
-                <div class="team-text">
-                    <div class="team-text__title">
-                        About
+            <div class="team-wrap">
+
+                <div class="team-tabs">
+                    <div class="team-tab team-tab--active">
+                        <div class="team-tab__circle">
+                            <span></span>
+                        </div>
+                        Team 1
                     </div>
-                    <p class="team-text__descr">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Fusce nullam ac sed eget. Dui in eget a tristique. 
-                    </p>
+                    <div class="team-tab">
+                        <div class="team-tab__circle">
+                            <span></span>
+                        </div>
+                        Team 2
+                    </div>
+                    <div class="team-tab">
+                        <div class="team-tab__circle">
+                            <span></span>
+                        </div>
+                        Team 3
+                    </div>
                 </div>
 
-                <div class="team-wrap">
+            </div>
+        </div>
+        <div class="team-wrapper">
 
-                    <div class="team-tabs">
-                        <div class="team-tab team-tab--active">
-                            <div class="team-tab__circle">
-                                <span></span>
+            <div class="team-text">
+                <div class="team-text__title">
+                    About
+                </div>
+                <p class="team-text__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Fusce nullam ac sed eget. Dui in eget a tristique. 
+                </p>
+            </div>
+            <div class="slider-wrap">
+                <div class="team-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card__image">
+                                    <img src="img/team/team-1.png" alt="Team 1">
+                                </div>
+                                <div class="team-card__body">
+                                    <div class="team-card__name">
+                                        Tom Dou
+                                    </div>
+                                    <div class="team-card__position">
+                                        Front-End
+                                    </div>
+                                    <a href="#" class="team-card__btn btn">Read More</a>
+                                </div>
                             </div>
-                            Team 1
                         </div>
-                        <div class="team-tab">
-                            <div class="team-tab__circle">
-                                <span></span>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card__image">
+                                    <img src="img/team/team-2.png" alt="Team 1">
+                                </div>
+                                <div class="team-card__body">
+                                    <div class="team-card__name">
+                                        Tom Dou
+                                    </div>
+                                    <div class="team-card__position">
+                                        Front-End
+                                    </div>
+                                    <a href="#" class="team-card__btn btn">Read More</a>
+                                </div>
                             </div>
-                            Team 2
                         </div>
-                        <div class="team-tab">
-                            <div class="team-tab__circle">
-                                <span></span>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card__image">
+                                    <img src="img/team/team-3.png" alt="Team 1">
+                                </div>
+                                <div class="team-card__body">
+                                    <div class="team-card__name">
+                                        Tom Dou
+                                    </div>
+                                    <div class="team-card__position">
+                                        Front-End
+                                    </div>
+                                    <a href="#" class="team-card__btn btn">Read More</a>
+                                </div>
                             </div>
-                            Team 3
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-card__image">
+                                    <img src="img/team/team-4.png" alt="Team 1">
+                                </div>
+                                <div class="team-card__body">
+                                    <div class="team-card__name">
+                                        Tom Dou
+                                    </div>
+                                    <div class="team-card__position">
+                                        Front-End
+                                    </div>
+                                    <a href="#" class="team-card__btn btn">Read More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="team-slider slider">
 
+                </div>
 
+                <div class="slider-bottom">
+                    
+                    <div class="slider-arrows">
+                        <div class="arrow arrow-prev">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_106)">
+                                <path d="M17.5196 11.9167L11.7086 6.10569L13.2405 4.57385L21.6666 13L13.2405 21.4262L11.7086 19.8944L17.5196 14.0834H4.33331V11.9167H17.5196Z" fill="#101020" />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_106">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="arrow arrow-next">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_106)">
+                                <path d="M17.5196 11.9167L11.7086 6.10569L13.2405 4.57385L21.6666 13L13.2405 21.4262L11.7086 19.8944L17.5196 14.0834H4.33331V11.9167H17.5196Z" fill="#101020" />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_106">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="swiper-scrollbar"></div>
+                    
+                </div>
+            </div>
+
+            
+
+           
+            <!-- <div class="slider-wrap">
+                <div class="team-slider slider">
+                    <div class="slider-item">
                         <div class="team-card">
                             <div class="team-card__image">
                                 <img src="img/team/team-1.png" alt="Team 1">
@@ -308,6 +423,8 @@
                                 <a href="#" class="team-card__btn btn">Read More</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="slider-item">
                         <div class="team-card">
                             <div class="team-card__image">
                                 <img src="img/team/team-2.png" alt="Team 1">
@@ -322,6 +439,8 @@
                                 <a href="#" class="team-card__btn btn">Read More</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="slider-item">
                         <div class="team-card">
                             <div class="team-card__image">
                                 <img src="img/team/team-3.png" alt="Team 1">
@@ -336,9 +455,11 @@
                                 <a href="#" class="team-card__btn btn">Read More</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="slider-item">
                         <div class="team-card">
                             <div class="team-card__image">
-                                <img src="img/team/team-2.png" alt="Team 1">
+                                <img src="img/team/team-4.png" alt="Team 1">
                             </div>
                             <div class="team-card__body">
                                 <div class="team-card__name">
@@ -350,12 +471,42 @@
                                 <a href="#" class="team-card__btn btn">Read More</a>
                             </div>
                         </div>
-
-  
                     </div>
                 </div>
 
-            </div>
+                
+            
+                <div class="slider-bottom">
+                    <div class="slider-pagination"></div>
+
+                    <div class="slider-arrows">
+                        <div class="slider-arrow arrow-prev">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_106)">
+                                <path d="M17.5196 11.9167L11.7086 6.10569L13.2405 4.57385L21.6666 13L13.2405 21.4262L11.7086 19.8944L17.5196 14.0834H4.33331V11.9167H17.5196Z" fill="#101020" />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_106">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="slider-arrow arrow-next">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_106)">
+                                <path d="M17.5196 11.9167L11.7086 6.10569L13.2405 4.57385L21.6666 13L13.2405 21.4262L11.7086 19.8944L17.5196 14.0834H4.33331V11.9167H17.5196Z" fill="#101020" />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_106">
+                                    <rect width="26" height="26" fill="white" />
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -484,7 +635,7 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-                    
 </body>
 </html>
